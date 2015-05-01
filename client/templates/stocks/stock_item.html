@@ -2,15 +2,21 @@
  <div class="stock">
  <div class="stock-content">
  <h3>
- 	<a href="http://www.gurufocus.com//stock.php?symbol={{ticker}}">{{ticker}} - GF </a> 
- 	<li>{{buyFlag}}</li>
+ 	<a href="http://www.gurufocus.com//stock.php?symbol={{ticker}}">{{ticker}} - GF </a>
  </h3>
+ <br>
+ <a href="{{pathFor 'stockPage'}}" class="discuss btn btn-default">Edit</a>
+ 
       <br>
       <table>
       	<tr>
       		<td>
-            	<img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=D&b=5&g=0&i=t87435249874&r=1430436645233"/>
-              <img src="http://stockcharts.com/c-sc/sc?s={{item}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+            	<img src="http://stockcharts.com/c-sc/sc?s={{ticker}}&p=D&b=5&g=0&i=t96600992511&r=1430460840135"/>
+
+              </td><td>
+
+              <img src="http://stockcharts.com/c-sc/sc?s={{ticker}}&p=W&b=5&g=0&i=t99261714081&r=1408323404116"/>
+
             </td>
         </tr>
     </table>
