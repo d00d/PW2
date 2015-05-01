@@ -1,4 +1,11 @@
 <template name="layout">
+
+<header class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="{{pathFor 'stocksList'}}">PW 2.0</a>
+  </div>
+</header>
+
   <div class="container">
     <header class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
@@ -8,4 +15,5 @@
       {{> yield}}
     </div>
   </div>
+
 </template>
