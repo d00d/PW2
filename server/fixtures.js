@@ -10,7 +10,7 @@ if (Stocks.find().count() === 0) {
 	});
 	
 	Stocks.insert({
-		ticker: 'BMO',
+		ticker: 'COH',
 		url: 'https://www.youtube.com/watch?v=Kve1jq0psh8'
 	});
 	
