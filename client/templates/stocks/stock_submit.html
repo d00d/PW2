@@ -1,0 +1,28 @@
+<template name="stockEdit">
+  <form class="form.inline">
+    <div class="form-group">
+        <div class="controls">
+          <label class="control-label" for="ticker">Ticker</label>
+            <input name="url" id="url" type="text" value="" placeholder="Stock Ticker..." class="form-control"/>
+          
+          <label class="checkbox.inline" for="isPosition">Active Position</label>
+            <input name="isPosition" id="isPosition" type="checkbox" value=""/><br>
+          
+          <label class="radio.inline" for="isPosition">Buy Watch</label>
+            <input name="isPosition" id="isPosition" type="radio" value=""/>
+
+          <label class="radio.inline" for="isPosition">Sell Watch</label>
+            <input name="isPosition" id="isPosition" type="radio" value=""/><br>
+
+          <label class="checkbox.inline" for="isPosition">Income</label>
+            <input name="isPosition" id="isPosition" type="checkbox" value=""/><br>
+
+          <label class="checkbox.inline" for="isPosition">ST-Trade</label>
+            <input name="isPosition" id="isPosition" type="checkbox" value=""/><br>
+
+        </div>
+    </div>    
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+
+</template>

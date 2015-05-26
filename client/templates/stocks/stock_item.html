@@ -1,23 +1,22 @@
 <template name="stockItem">
- <div class="stock">
- <div class="stock-content">
- <h3>
- 	<a href="http://www.gurufocus.com//stock.php?symbol={{ticker}}">{{ticker}} - GF </a>
- </h3>
- <br>
- 
-      <br>
       <table>
-      	<tr>
-      		<td>
+      	<tr><td>
+            <h4> {{ticker}}</h4>
+                <a class="btn btn-info" href="http://stockcharts.com/c-sc/sc?s={{ticker}}&p=D&b=5&g=0&i=t54639232412&r=1432580887664">Zoom</a>
+                <a class="btn btn-info" href="http://www.gurufocus.com//stock.php?symbol={{ticker}}">{{ticker}} - Guru Focus Fundamentals</a>
+                <a class="btn btn-info" href="http://seekingalpha.com/symbol/{{ticker}}">{{ticker}} - Seeking Alpha Analysis</a> 
+                <a class="btn btn-info" href="http://finance.yahoo.com/mb/{{ticker}}">{{ticker}} - Yahoo! Message Boards</a> 
+<br>
             	<img src="http://stockcharts.com/c-sc/sc?s={{ticker}}&p=D&b=5&g=0&i=t96600992511&r=1430460840135"/><br>
+    
+          </td>
               <a href="{{pathFor 'stockPage'}}" class="discuss btn btn-default">Edit</a>
-              </td><td>
+          <td>
 
-            </td>
+          </td>
         </tr>
     </table>
+    
     <br>
- </div>
- </div>
+ 
 </template>
